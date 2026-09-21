@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Skylabs Indonesia — Software Studio</title>
+  <link rel="icon" type="image/png" href="assets/favicon.png">
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;450;500;600;700&family=JetBrains+Mono:wght@400;500&family=Sora:wght@600;700;800&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    }
+    .font-mono {
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .font-heading {
+      font-family: 'Sora', sans-serif;
+    }
+  </style>
+</head>
+<body class="bg-[#f8fafc] text-[#0f172a] antialiased min-h-screen selection:bg-slate-200 selection:text-slate-900 flex flex-col">
+
+  <!-- Main Container -->
+  <div class="max-w-3xl mx-auto px-5 sm:px-8 py-12 sm:py-20 w-full flex-grow flex flex-col">
+    
+    <!-- Top Nav -->
+    <header class="flex items-center justify-between pb-10 sm:pb-14 border-b border-slate-200">
+      <div class="flex items-center gap-3">
+        <a href="#" onclick="showHomeView()" class="flex items-center gap-2.5 group">
+          <img src="assets/skylabs-cloud-blue.png" alt="Skylabs Studio Logo" class="h-7 w-auto object-contain group-hover:scale-105 transition-transform">
+          <span class="font-heading text-xl font-bold tracking-tight text-slate-900">
+            Skylabs Studio<span class="text-blue-600"></span>
+          </span>
+        </a>
+      </div>
+
+      <nav class="flex items-center gap-6 text-xs font-semibold text-slate-500">
+        <a href="#proyek" onclick="showHomeView()" class="hover:text-slate-900 transition-colors">Aplikasi</a>
+        <a href="#prinsip" onclick="showHomeView()" class="hover:text-slate-900 transition-colors">Prinsip</a>
+        <a href="#kontak" onclick="showHomeView()" class="hover:text-slate-900 transition-colors">Kontak</a>
+      </nav>
+    </header>
+
+    <!-- VIEW 1: HOME PAGE -->
+    <div id="view-home" class="space-y-16 sm:space-y-20 pt-10 sm:pt-14">
+      
+      <!-- Bio / Opening -->
+      <section class="space-y-4">
+        <h1 class="text-2xl sm:text-3xl font-bold tracking-tight text-slate-900 leading-snug font-heading">
+          Tentang Kami
+        </h1>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl">
+          Skylabs Studio adalah studio perangkat lunak independen dari Indonesia. Kami merancang alat bantu operasional serta aplikasi utilitas harian yang mengutamakan privasi dan keandalan luring (offline-first).
+        </p>
+        <p class="text-slate-600 text-sm sm:text-base leading-relaxed max-w-2xl">
+          Dengan fokus pada pengalaman pengguna yang optimal dan solusi teknologi yang inovatif, kami berkomitmen untuk memberikan produk berkualitas tinggi yang memenuhi kebutuhan dan harapan pelanggan.
+        </p>
+      </section>
+
+      <!-- Manifesto / Principles -->
+      <section id="prinsip" class="pt-8 border-t border-slate-200">
+        <div class="text-xs font-mono uppercase tracking-wider text-slate-400 mb-6">
+          // Prinsip Kerja Kami
+        </div>
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-5 text-sm">
+          <div class="space-y-2 p-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-semibold text-slate-900 flex items-center gap-2 text-sm font-heading">
+              <span class="text-blue-600 font-mono text-xs">01.</span> Offline-First
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Aplikasi harus tetap bekerja normal tanpa koneksi internet. Seluruh data inti disimpan aman di perangkat pengguna.
+            </p>
+          </div>
+          <div class="space-y-2 p-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-semibold text-slate-900 flex items-center gap-2 text-sm font-heading">
+              <span class="text-blue-600 font-mono text-xs">02.</span> Bebas Bloatware
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Tanpa fitur rumit yang mubazir. Desain antarmuka langsung fokus menyelesaikan pekerjaan dalam hitungan detik.
+            </p>
+          </div>
+          <div class="space-y-2 p-5 rounded-2xl bg-white border border-slate-200 shadow-xs">
+            <div class="font-semibold text-slate-900 flex items-center gap-2 text-sm font-heading">
+              <span class="text-blue-600 font-mono text-xs">03.</span> Problem-Solving
+            </div>
+            <p class="text-slate-600 text-xs leading-relaxed">
+              Aplikasi yang dihasilkan harus benar-benar menyelesaikan masalah nyata pengguna.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="proyek" class="pt-8 border-t border-slate-200 space-y-6">
+        <div class="flex items-center justify-between">
+          <div class="text-xs font-mono uppercase tracking-wider text-slate-400">
+            // Proyek & Aplikasi
+          </div>
+          <span class="text-xs text-slate-500 font-mono">3 Aplikasi Produksi</span>
+        </div>
+
+        <div class="space-y-4">
+          
+          <!-- Project 1: EXAM -->
+          <article class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-slate-300 transition-all group">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-5">
+              <div class="flex items-start gap-4">
+                <img src="assets/exam-logo.png" alt="EXAM Logo" class="w-14 h-14 rounded-2xl border border-slate-200 shadow-xs object-contain bg-white p-1 shrink-0">
+                <div class="space-y-2 max-w-lg">
+                  <div class="flex items-center gap-3">
+                    <h2 class="text-lg font-bold text-slate-900 font-heading group-hover:text-sky-600 transition-colors">
+                      EXAM
+                    </h2>
+                  </div>
+                  <p class="text-sm text-slate-600 leading-relaxed">
+                    Electronic XML Automation Module. Aplikasi desktop untuk mengotomasi pembuatan Bukti Potong Pajak (BPA1, BPA2, BPMP, BP21 Final) dan konversi data penghasilan (Simgaji, GPP, TPP) ke format XML Coretax DJP secara otomatis dan akurat.
+                  </p>
+                  <div class="flex flex-wrap items-center gap-3 text-xs font-mono text-slate-500 pt-1">
+                    <span class="text-slate-900 font-semibold">• 250+ Instansi Pemerintah</span>
+                    <span>• Import Simgaji & Gajiweb</span>
+                    <span>• Ekspor XML Coretax DJP</span>
+                    <span>• Validasi Selisih PPh</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Link & Status -->
+              <div class="flex flex-col sm:items-end self-stretch shrink-0 pt-1 sm:pt-0">
+                <span class="text-xs font-mono text-emerald-600 font-medium">(telah rilis)</span>
+                <div class="my-auto pt-3 sm:pt-0">
+                  <button onclick="showProjectDetail('exam')" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold shadow-xs transition-all">
+                    <span>Lihat Detail</span>
+                    <svg class="w-3.5 h-3.5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 2: SimplePOS -->
+          <article class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-slate-300 transition-all group">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-5">
+              <div class="flex items-start gap-4">
+                <img src="assets/simplepos-logo.png" alt="SimplePOS Logo" class="w-14 h-14 rounded-2xl border border-slate-200 shadow-xs object-contain bg-white p-1.5 shrink-0">
+                <div class="space-y-2 max-w-lg">
+                  <div class="flex items-center gap-3">
+                    <h2 class="text-lg font-bold text-slate-900 font-heading group-hover:text-blue-600 transition-colors">
+                      SimplePOS
+                    </h2>
+                  </div>
+                  <p class="text-sm text-slate-600 leading-relaxed">
+                    Aplikasi kasir Android 100% Offline-First untuk UMKM. Kelola transaksi super cepat di laci kasir fisik tanpa takut internet mati, sinkronisasi cabang P2P, dan kepatuhan pajak DJP Coretax dalam satu genggaman.
+                  </p>
+                  <div class="flex flex-wrap items-center gap-3 text-xs font-mono text-slate-500 pt-1">
+                    <span>• POS Engine cepat & handal</span>
+                    <span>• Manajemen Katalog Produk</span>
+                    <span>• Radar Pajak UMKM</span>
+                    <span>• 100% Offline & Aman</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Link & Status -->
+              <div class="flex flex-col sm:items-end self-stretch shrink-0 pt-1 sm:pt-0">
+                <span class="text-xs font-mono text-amber-600 font-medium">(dalam proses)</span>
+                <div class="my-auto pt-3 sm:pt-0">
+                  <button onclick="showProjectDetail('simplepos')" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold shadow-xs transition-all">
+                    <span>Lihat Detail</span>
+                    <svg class="w-3.5 h-3.5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+          <!-- Project 3: eling -->
+          <article class="p-6 sm:p-7 rounded-2xl bg-white border border-slate-200 shadow-xs hover:border-slate-300 transition-all group">
+            <div class="flex flex-col sm:flex-row sm:items-start justify-between gap-5">
+              <div class="flex items-start gap-4">
+                <img src="assets/eling-logo.png" alt="eling Logo" class="w-14 h-14 rounded-2xl border border-slate-200 shadow-xs object-contain bg-white p-1 shrink-0">
+                <div class="space-y-2 max-w-lg">
+                  <div class="flex items-center gap-3">
+                    <h2 class="text-lg font-bold text-slate-900 font-heading group-hover:text-emerald-700 transition-colors">
+                      eling
+                    </h2>
+                  </div>
+                  <p class="text-sm text-slate-600 leading-relaxed">
+                    Aplikasi pengingat tenggat waktu resmi pajak tahunan kendaraan (PKB), perpanjangan plat STNK 5 tahun, dan SIM. Cukup masukkan data sekali, eLing yang akan mengingatkan Anda tepat waktu, setiap tahun, tanpa perlu diingat-ingat lagi.
+                  </p>
+                  <div class="flex flex-wrap items-center gap-3 text-xs font-mono text-slate-500 pt-1">
+                    <span>• Multi Vehicle & SIM</span>
+                    <span>• Widget di Layar Utama</span>
+                    <span>• Notifikasi Tepat Waktu</span>
+                    <span>• 100% Offline Lokal</span>
+                  </div>
+                </div>
+              </div>
+
+              <!-- Action Link & Status -->
+              <div class="flex flex-col sm:items-end self-stretch shrink-0 pt-1 sm:pt-0">
+                <span class="text-xs font-mono text-amber-600 font-medium">(dalam proses)</span>
+                <div class="my-auto pt-3 sm:pt-0">
+                  <button onclick="showProjectDetail('eling')" class="inline-flex items-center gap-1.5 px-4 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white text-xs font-semibold shadow-xs transition-all">
+                    <span>Lihat Detail</span>
+                    <svg class="w-3.5 h-3.5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                    </svg>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- Contact / Colophon -->
+      <section id="kontak" class="pt-8 border-t border-slate-200 space-y-4">
+        <div class="text-xs font-mono uppercase tracking-wider text-slate-400">
+          // Kontak Pengembang
+        </div>
+        <p class="text-sm text-slate-600 leading-relaxed">
+          Kritik dan saran terkait produk atau pertanyaan mengenai lisensi dapat dialamatkan ke surel resmi kami. Kami berkomitmen untuk menanggapi setiap pertanyaan dengan cepat dan profesional.
+        </p>
+        <div class="pt-1">
+          <a href="mailto:skylabs.1988@gmail.com" class="font-mono text-sm text-slate-900 hover:text-blue-600 border-b border-slate-400 hover:border-blue-600 pb-0.5 transition-colors">
+            skylabs.1988@gmail.com
+          </a>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- VIEW 4: DEDICATED STATIC PROJECT PAGE (EXAM) -->
+    <div id="view-project-exam" class="hidden space-y-10 pt-8">
+      
+      <!-- Back button -->
+      <div>
+        <button onclick="showHomeView()" class="inline-flex items-center gap-2 text-xs font-mono text-slate-600 hover:text-slate-900 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+          <span>Kembali ke Beranda</span>
+        </button>
+      </div>
+
+      <!-- Project Header with Real Brand Mark -->
+      <div class="space-y-4 border-b border-slate-200 pb-8">
+        <div class="flex items-center gap-4">
+          <img src="assets/exam-logo.png" alt="EXAM Logo" class="w-16 h-16 rounded-2xl border border-slate-200 shadow-xs object-contain bg-white p-1">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span class="text-xs font-mono text-slate-500">Aplikasi Desktop Windows • Versi 3.1.2</span>
+            </div>
+            <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight font-heading">EXAM</h1>
+            <p class="text-sm text-slate-600">Electronic XML Automation Module</p>
+          </div>
+        </div>
+        
+        <!-- Tech Specs Meta -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3 text-xs font-mono">
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Platform</div>
+            <div class="text-slate-900 font-semibold mt-1">Windows 10/11</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Database</div>
+            <div class="text-slate-900 font-semibold mt-1">SQLite (Lokal)</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Format Output</div>
+            <div class="text-slate-900 font-semibold mt-1">XML Coretax DJP</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Telah Digunakan</div>
+            <div class="text-slate-900 font-semibold mt-1">250+ Instansi</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview Content -->
+      <div class="space-y-6 text-sm text-slate-700 leading-relaxed">
+        <h2 class="text-lg font-bold text-slate-900 font-heading">Tentang EXAM</h2>
+        <p>
+          <strong>EXAM</strong> (Electronic XML Automation Module) adalah aplikasi desktop yang dirancang khusus untuk mempermudah bendahara dan pengelola gaji pada instansi pemerintah daerah dalam mengelola data pemotongan pajak penghasilan pegawai secara otomatis dan terstruktur.
+        </p>
+        <p>
+          Aplikasi ini menjembatani data penggajian dari berbagai format sistem (SimGaji Taspen, GPP, Polri, GajiWeb, dan TPP) untuk kemudian dikonversi secara presisi menjadi berkas XML resmi yang siap diimpor ke sistem Coretax Direktorat Jenderal Pajak (DJP). Hingga saat ini, EXAM telah dipercaya dan aktif digunakan oleh lebih dari <strong>250 Instansi Pemerintah</strong> di seluruh Indonesia.
+        </p>
+
+        <h2 class="text-lg font-bold text-slate-900 pt-2 font-heading">Fitur Utama</h2>
+        <ul class="space-y-2 list-disc list-inside text-slate-700 text-sm">
+          <li><strong>Otomasi Ekspor XML Coretax:</strong> Menghasilkan skema XML untuk BPA1 (PPPK), BPA2 (PNS), BPMP (Bukti Potong Masa Pajak Bulanan), dan BP21 Final (Honorarium APBD/APBN).</li>
+          <li><strong>Integrasi Data Multi-Sumber:</strong> Mendukung impor berkas Excel dari SimGaji Taspen, GPP, dan format data TPP murni tanpa input ulang satu per satu.</li>
+          <li><strong>Deteksi Anomali & Debugger:</strong> Validasi otomatis selisih hitungan PPh terutang vs PPh dipotong serta alat bantu validasi XML sebelum pelaporan.</li>
+          <li><strong>100% Offline & Aman:</strong> Seluruh database tersimpan secara lokal di komputer pengguna (tanpa server luar), menjaga kerahasiaan data penghasilan pegawai instansi.</li>
+        </ul>
+
+        <!-- Telegram Download CTA -->
+        <div class="pt-2 pb-2">
+          <a href="https://t.me/exam544" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs shadow-xs transition-colors">
+            <span>Join Channel</span>
+            <svg class="w-3.5 h-3.5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+      </div>
+
+      <!-- Bottom return link -->
+      <div class="pt-4 pb-8">
+        <button onclick="showHomeView()" class="text-xs font-mono text-slate-500 hover:text-slate-900 underline">
+          ← Kembali ke Beranda
+        </button>
+      </div>
+
+    </div>
+
+    <!-- VIEW 2: DEDICATED STATIC PROJECT PAGE (eling) -->
+    <div id="view-project-eling" class="hidden space-y-10 pt-8">
+      
+      <!-- Back button -->
+      <div>
+        <button onclick="showHomeView()" class="inline-flex items-center gap-2 text-xs font-mono text-slate-600 hover:text-slate-900 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+          <span>Kembali ke Beranda</span>
+        </button>
+      </div>
+
+      <!-- Project Header with Real Brand Mark -->
+      <div class="space-y-4 border-b border-slate-200 pb-8">
+        <div class="flex items-center gap-4">
+          <img src="assets/eling-logo.png" alt="eling Logo" class="w-16 h-16 rounded-2xl border border-slate-200 shadow-xs object-contain bg-white p-1.5">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+              <span class="text-xs font-mono text-slate-500">Aplikasi Android • Versi 0.1.5</span>
+            </div>
+            <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight font-heading">eling</h1>
+            <p class="text-sm text-slate-600">Pengingat Pajak Kendaraan Bermotor, STNK 5 Tahun & SIM</p>
+          </div>
+        </div>
+        
+        <!-- Tech Specs Meta -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3 text-xs font-mono">
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Platform</div>
+            <div class="text-slate-900 font-semibold mt-1">Android 8.0+</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Database</div>
+            <div class="text-slate-900 font-semibold mt-1">Room SQLite (Lokal)</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Izin Alarm</div>
+            <div class="text-slate-900 font-semibold mt-1">Schedule Exact Alarm / Exact RTC Alarm</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Distribusi</div>
+            <div class="text-slate-900 font-semibold mt-1">Google Play Store</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview Content -->
+      <div class="space-y-6 text-sm text-slate-700 leading-relaxed">
+        <h2 class="text-lg font-bold text-slate-900 font-heading">Tentang Eling</h2>
+        <p>
+          <strong>eling</strong> hadir sebagai pengingat pribadi yang sederhana namun andal untuk urusan wajib Anda — pajak STNK, ganti plat 5 tahunan, dan masa berlaku SIM. Cukup masukkan data sekali, eLing yang akan mengingatkan Anda tepat waktu, setiap tahun, tanpa perlu diingat-ingat lagi.
+        </p>
+        <p>
+          Banyak pemilik kendaraan bermotor di Indonesia terlambat membayar Pajak Kendaraan Bermotor (PKB) tahunan atau lupa memperpanjang Surat Izin Mengemudi (SIM). Keterlambatan tersebut mengakibatkan sanksi denda administrasi atau kewajiban mengulang proses ujian penerbitan SIM dari awal.
+        </p>
+        <h2 class="text-lg font-bold text-slate-900 pt-2 font-heading">Fitur Utama</h2>
+        <ul class="space-y-2 list-disc list-inside text-slate-700 text-sm">
+          <li><strong>Pencatatan Kendaraan & SIM:</strong> Menampung data plat nomor, nama kendaraan, masa berlaku tahunan, dan 5 tahunan.</li>
+          <li><strong>Garis Waktu Perjalanan:</strong> Indikator visual progres menuju jatuh tempo pembayaran dan perpanjangan dokumen.</li>
+          <li><strong>Widget Home Screen 3D Squircle:</strong> Menampilkan tenggat terdekat langsung di layar beranda.</li>
+          <li><strong>Privasi 100% Offline:</strong> Seluruh data tersimpan secara lokal di memori internal ponsel tanpa dikirim ke server manapun.</li>
+        </ul>
+      </div>
+
+      <!-- Official Privacy Policy (Required for Google Play Store Listing) -->
+      <div id="privacy-section-eling" class="border-t border-slate-200 pt-8 space-y-4">
+        <div class="flex items-center justify-between">
+          <h2 class="text-base font-bold text-slate-900 font-heading">Kebijakan Privasi</h2>
+        </div>
+        
+        <div class="bg-white border border-slate-200 rounded-xl p-6 space-y-4 text-xs text-slate-600 leading-relaxed font-mono shadow-xs">
+          <p>
+            <strong class="text-slate-900">1. Prinsip Privasi</strong><br>
+            Aplikasi eling dikembangkan oleh Skylabs Studio dengan prinsip offline-first. Kami tidak mengumpulkan, tidak menyimpan di server eksternal, dan tidak menjual data pribadi Anda.
+          </p>
+          <p>
+            <strong class="text-slate-900">2. Data yang Disimpan di Perangkat</strong><br>
+            Seluruh rincian kendaraan (nama panggilan, nomor polisi/plat) dan identitas SIM disimpan secara eksklusif di dalam memori internal perangkat ponsel Anda menggunakan basis data SQLite lokal. Data tersebut sepenuhnya berada di bawah kendali Anda dan akan terhapus jika Anda menghapus data aplikasi atau mencopot pemasangan.
+          </p>
+          <p>
+            <strong class="text-slate-900">3. Izin Sistem Android yang Digunakan</strong><br>
+            - <code class="text-slate-900 font-bold">POST_NOTIFICATIONS</code>: Digunakan untuk menampilkan pesan pengingat tenggat waktu.<br>
+            - <code class="text-slate-900 font-bold">SCHEDULE_EXACT_ALARM / USE_EXACT_ALARM</code>: Digunakan untuk menjadwalkan alarm sistem tepat pukul 09:00 pagi.<br>
+            - <code class="text-slate-900 font-bold">RECEIVE_BOOT_COMPLETED</code>: Digunakan untuk mendaftarkan kembali jadwal alarm pengingat secara otomatis saat perangkat selesai di-restart.
+          </p>
+          <p>
+            <strong class="text-slate-900">4. Layanan Pihak Ketiga</strong><br>
+            Aplikasi menggunakan Google AdMob untuk penayangan iklan opsional dan Google Play In-App Billing untuk pembelian fitur Bebas Iklan permanen. Layanan Google dapat mengumpulkan data pengenal anonim sesuai kebijakan privasi resmi Google.
+          </p>
+          <p>
+            <strong class="text-slate-900">5. Kontak Privasi</strong><br>
+            Pertanyaan terkait kebijakan privasi ini dapat dialamatkan ke surel resmi: skylabs.1988@gmail.com
+          </p>
+        </div>
+      </div>
+
+      <!-- Bottom return link -->
+      <div class="pt-4 pb-8">
+        <button onclick="showHomeView()" class="text-xs font-mono text-slate-500 hover:text-slate-900 underline">
+          ← Kembali ke Beranda
+        </button>
+      </div>
+
+    </div>
+
+    <!-- VIEW 3: DEDICATED STATIC PROJECT PAGE (SimplePOS) -->
+    <div id="view-project-simplepos" class="hidden space-y-10 pt-8">
+      
+      <!-- Back button -->
+      <div>
+        <button onclick="showHomeView()" class="inline-flex items-center gap-2 text-xs font-mono text-slate-600 hover:text-slate-900 transition-colors">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 19l-7-7m0 0l7-7m-7 7h18"/>
+          </svg>
+          <span>Kembali ke Beranda</span>
+        </button>
+      </div>
+
+      <!-- Project Header with Real Brand Mark -->
+      <div class="space-y-4 border-b border-slate-200 pb-8">
+        <div class="flex items-center gap-4">
+          <img src="assets/simplepos-logo.png" alt="SimplePOS Logo" class="w-16 h-16 rounded-2xl border border-slate-200 shadow-xs object-contain bg-white p-1.5">
+          <div>
+            <div class="flex items-center gap-2 mb-1">
+              <span class="w-2 h-2 rounded-full bg-blue-600"></span>
+              <span class="text-xs font-mono text-slate-500">Aplikasi Kasir UMKM • Mandiri & Ringkas</span>
+            </div>
+            <h1 class="text-3xl font-extrabold text-slate-900 tracking-tight font-heading">SimplePOS</h1>
+            <p class="text-sm text-slate-600">Sistem Kasir Digital dan Manajemen Stok</p>
+          </div>
+        </div>
+        
+        <!-- Tech Specs Meta -->
+        <div class="grid grid-cols-2 sm:grid-cols-4 gap-3 pt-3 text-xs font-mono">
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Kategori</div>
+            <div class="text-slate-900 font-semibold mt-1">Point of Sale (POS)</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Printer</div>
+            <div class="text-slate-900 font-semibold mt-1">Thermal Bluetooth</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Pajak UMKM</div>
+            <div class="text-slate-900 font-semibold mt-1">PP 55/2022 (0.5%)</div>
+          </div>
+          <div class="p-3.5 rounded-xl bg-white border border-slate-200 shadow-xs">
+            <div class="text-slate-400 text-[11px]">Model Biaya</div>
+            <div class="text-slate-900 font-semibold mt-1">Tanpa Langganan</div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overview Content -->
+      <div class="space-y-6 text-sm text-slate-700 leading-relaxed">
+        <h2 class="text-lg font-bold text-slate-900 font-heading">Tentang SimplePOS</h2>
+        <p>
+          <strong>SimplePOS</strong> lahir dari kebutuhan nyata para pemilik warung, kedai, dan usaha retail kecil di Indonesia yang mendambakan sistem kasir modern.
+        </p>
+        <p>
+          Aplikasi ini memadukan kemudahan transaksi kasir harian dengan pemenuhan kepatuhan pajak UMKM sesuai ketentuan pemerintah (PP 55/2022). Pemilik usaha dapat memantau akumulasi omset tahunan terhadap ambang batas batas bebas pajak Rp500 juta secara transparan dan otomatis.
+        </p>
+
+        <h2 class="text-lg font-bold text-slate-900 pt-2 font-heading">Fitur Unggulan</h2>
+        <ul class="space-y-2 list-disc list-inside text-slate-700 text-sm">
+          <li><strong>Kasir Cepat:</strong> Pencatatan belanja dalam hitungan detik dengan dukungan Barcode Scanner.</li>
+          <li><strong>Cetak & Kirim Struk:</strong> Cetak struk via printer thermal Bluetooth atau langsung kirimkan rincian pembayaran ke WhatsApp pelanggan.</li>
+          <li><strong>Manajemen Katalog Produk:</strong> Kelola produk Anda dengan mudah, termasuk penambahan, pengeditan, dan penghapusan item.</li>
+          <li><strong>Modul Pajak UMKM Terintegrasi:</strong> Pemantauan terhadap ambang batas bebas pajak, perhitungan estimasi PPh Final 0.5%, dan pengingat setoran pajak bulanan.</li>
+        </ul>
+      </div>
+
+      <!-- Play Store CTA -->
+        <div class="pt-2 pb-2">
+          <a href="https://play.google.com/store/apps/details?id=com.umkm.pos" target="_blank" class="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-semibold text-xs shadow-xs transition-colors">
+            <span>Buka Halaman Google Play Store</span>
+            <svg class="w-3.5 h-3.5 text-slate-300" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"/>
+            </svg>
+          </a>
+        </div>
+
+      <!-- Bottom return link -->
+      <div class="pt-4 pb-8">
+        <button onclick="showHomeView()" class="text-xs font-mono text-slate-500 hover:text-slate-900 underline">
+          ← Kembali ke Beranda
+        </button>
+      </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer class="mt-auto pt-16 border-t border-slate-200 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs font-mono text-slate-500">
+      <div class="flex items-center gap-2">
+        <span>© 2026 Skylabs Studio.</span>
+      </div>
+      <div class="flex items-center gap-6 font-semibold">
+        <a href="mailto:skylabs.1988@gmail.com" class="hover:text-slate-900 transition-colors">Surel</a>
+        <a href="https://play.google.com/store/apps/dev?id=5614776736733349805" target="_blank" class="hover:text-slate-900 transition-colors">Google Play</a>
+      </div>
+    </footer>
+
+  </div>
+
+  <script>
+    function showHomeView() {
+      document.getElementById('view-home').classList.remove('hidden');
+      document.getElementById('view-project-exam').classList.add('hidden');
+      document.getElementById('view-project-eling').classList.add('hidden');
+      document.getElementById('view-project-simplepos').classList.add('hidden');
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    function showProjectDetail(projectId) {
+      document.getElementById('view-home').classList.add('hidden');
+      document.getElementById('view-project-exam').classList.add('hidden');
+      document.getElementById('view-project-eling').classList.add('hidden');
+      document.getElementById('view-project-simplepos').classList.add('hidden');
+
+      if (projectId === 'exam') {
+        document.getElementById('view-project-exam').classList.remove('hidden');
+      } else if (projectId === 'eling') {
+        document.getElementById('view-project-eling').classList.remove('hidden');
+      } else if (projectId === 'simplepos') {
+        document.getElementById('view-project-simplepos').classList.remove('hidden');
+      }
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    // Check hash on load (support deep link like #exam, #eling, #simplepos, #privacy-eling, #privacy-simplepos)
+    window.addEventListener('DOMContentLoaded', () => {
+      const hash = window.location.hash;
+      if (hash === '#exam') {
+        showProjectDetail('exam');
+      } else if (hash === '#eling' || hash === '#privacy-eling' || hash === '#privacy') {
+        showProjectDetail('eling');
+        if (hash === '#privacy-eling' || hash === '#privacy') {
+          setTimeout(() => {
+            document.getElementById('privacy-section-eling')?.scrollIntoView({ behavior: 'smooth' });
+          }, 150);
+        }
+      } else if (hash === '#simplepos' || hash === '#privacy-simplepos') {
+        showProjectDetail('simplepos');
+        if (hash === '#privacy-simplepos') {
+          setTimeout(() => {
+            document.getElementById('privacy-section-simplepos')?.scrollIntoView({ behavior: 'smooth' });
+          }, 150);
+        }
+      }
+    });
+  </script>
+</body>
+</html>
