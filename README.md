@@ -1,14 +1,16 @@
 # Skylabs Indonesia — Website & Privacy Policy Hub
 
-Website profil studio pengembang independen **Skylabs Indonesia** sekaligus rumah dokumentasi dan Kebijakan Privasi resmi (*Privacy Policy*) untuk aplikasi **EXAM**, **SimplePOS**, dan **eling**.
+Website profil studio pengembang independen **Skylabs Indonesia** sekaligus etalase produk dan rumah dokumentasi resmi (*Privacy Policy Hub*) untuk produk studio: **EXAM**, **SimplePOS**, **eling**, **SimpleKOS**, dan **SimpleRent**.
 
 ## 📁 Struktur Direktori
-- `index.html`: Halaman utama, katalog proyek, dan dokumentasi statis + Kebijakan Privasi (Clean Light Theme).
+- `index.html`: Halaman utama, katalog proyek, dan dokumentasi statis + Kebijakan Privasi (Clean Light Theme, Vanilla SPA).
 - `assets/`:
   - `skylabs-cloud-blue.png`: Logo resmi transparent cloud mark Skylabs Studio.
   - `exam-logo.png`: Ikon resmi aplikasi desktop EXAM (Coretax DJP & Pemda).
   - `eling-logo.png`: Ikon resmi 3D brand mark aplikasi eling.
   - `simplepos-logo.png`: Ikon resmi kasir SimplePOS.
+  - `simplekos-logo.svg`: Ikon vektor brand mark aplikasi SimpleKOS.
+  - `simplerent-logo.svg`: Ikon vektor brand mark aplikasi SimpleRent.
   - `favicon.png`: Favicon web browser.
 
 ---
@@ -32,9 +34,7 @@ Selesai! Dalam 10 detik website Anda sudah resmi online di seluruh dunia! 🎉
 
 ## 📋 URL untuk Google Play Console (Privacy Policy)
 
-Begitu website aktif di `https://skylabs.pages.dev`, Anda bisa langsung memasukkan URL berikut ke kolom **App Content > Privacy Policy** di Google Play Console:
-
 - **Kebijakan Privasi eling**:  
-  `https://skylabs.pages.dev/#privacy-eling`
+  `https://skylabs.pages.dev/#privacy-eling` *(Dihosting di Skylabs Studio)*
 - **Kebijakan Privasi SimplePOS**:  
-  `https://skylabs.pages.dev/#privacy-simplepos`
+  `https://simpleposkasir.com/privacy` *(Dihosting mandiri di website resmi SimplePOS)*
